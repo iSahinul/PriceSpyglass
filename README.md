@@ -2,6 +2,13 @@
 
 ![PriceSpyglass](media/hero.svg)
 
+<p>
+  <img src="https://img.shields.io/badge/version-0.1.0-151515?style=for-the-badge" alt="Version 0.1.0">
+  <img src="https://img.shields.io/badge/license-MIT-151515?style=for-the-badge" alt="License: MIT">
+  <img src="https://img.shields.io/badge/python-stdlib_only-151515?style=for-the-badge" alt="Python, standard library only">
+  <img src="https://img.shields.io/badge/agent--ready-Claude%20%C2%B7%20ChatGPT%20%C2%B7%20Codex-151515?style=for-the-badge" alt="Agent-ready: works in Claude, ChatGPT and Codex">
+</p>
+
 **A tiny, store-agnostic price tracker with a memory.** List the products you care about, run one script, and PriceSpyglass keeps an honest price history in a single SQLite file — then tells you, every day, what genuinely got cheaper: biggest drops, 30-day lows, and a **deal score** that separates a real bargain from a fake "70% OFF" on an inflated list price.
 
 No account. No API keys. No Docker. Python standard library only.
@@ -87,6 +94,17 @@ A product can show a huge discount and still score low — if it has been cheape
 - **Unknown means absent** — a failed fetch is a gap in the graph, never a copied or invented number.
 - **One file is the memory** — back up `prices.sqlite` and you have backed up everything.
 
+## Give it to your AI
+
+Paste this into Claude, ChatGPT or Codex and let your assistant do the setup:
+
+```text
+Set up PriceSpyglass from this repo. Read skill/SKILL.md first. Ask me
+which products and stores I want to track, build my products.json with
+the right fetch path for each one, run the tracker, and show me the
+first digest. If a price cannot be read, tell me - never guess one.
+```
+
 ## Use it as an agent skill
 
 This repo ships a `SKILL.md` (in the `skill/` folder) in the open Agent Skills format — the same file works in Claude, ChatGPT and Codex. Install the skill and your AI assistant learns the discipline on its own: how to add products, which fetch path to pick, and why a price is never guessed.
@@ -109,6 +127,10 @@ PriceSpyglass reads public product pages politely — one request per product, s
 
 **Why SQLite and not a "real" database?**
 Because a price history for a personal watchlist is a few thousand rows a year. One file, zero setup, trivial backups — the boring choice is the right one.
+
+## What has been tested
+
+Covered by unit tests (JSON-LD parsing, Shopify payloads, storage idempotency, deal-score maths) and an end-to-end digest run on a synthetic 30-day history - see `examples/sample-digest.md`. The fetch paths come from a production price-intelligence system that polls real stores daily; this public extraction is new, so store-specific quirks may surface. Reports are welcome.
 
 ## About the creator
 
