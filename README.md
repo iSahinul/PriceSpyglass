@@ -59,6 +59,8 @@ Fetching is polite: sequential, a normal browser user-agent, 2 seconds between p
 - **Burr Grinder** (store.example.com): 3,900 - score 71
 ```
 
+A full sample generated from synthetic data: [examples/sample-digest.md](examples/sample-digest.md).
+
 ## The deal score (0–100)
 
 | Component | Points | Meaning |

@@ -1,0 +1,9 @@
+# PriceSpyglass local data
+__pycache__/
+*.pyc
+# Your watchlist and history are yours - they stay out of git
+products.json
+prices.sqlite
+prices.sqlite-*
+digests/
+.DS_Store
