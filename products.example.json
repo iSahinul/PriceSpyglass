@@ -1,0 +1,16 @@
+[
+  {
+    "key": "example-grinder",
+    "name": "Example Burr Grinder",
+    "store": "example-store.com",
+    "url": "https://example-store.com/products/burr-grinder",
+    "via": "jsonld"
+  },
+  {
+    "key": "example-shopify-kettle",
+    "name": "Example Gooseneck Kettle (Shopify store)",
+    "store": "example-shop.myshopify.com",
+    "url": "https://example-shop.myshopify.com/products/gooseneck-kettle",
+    "via": "shopify"
+  }
+]

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <rect width="1200" height="420" rx="24" fill="#0d1117"/>
+  <circle cx="1010" cy="70" r="190" fill="#f0b429" opacity="0.08"/>
+  <g transform="translate(120,96)">
+    <circle cx="70" cy="70" r="52" fill="none" stroke="#f0b429" stroke-width="12"/>
+    <line x1="108" y1="108" x2="168" y2="168" stroke="#f0b429" stroke-width="16" stroke-linecap="round"/>
+    <path d="M45 62 L70 40 L95 62" fill="none" stroke="#e6edf3" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="70" cy="88" r="6" fill="#e6edf3"/>
+  </g>
+  <text x="120" y="330" font-family="Georgia, 'Times New Roman', serif" font-size="72" fill="#e6edf3">Price<tspan fill="#f0b429">Spyglass</tspan></text>
+  <text x="122" y="372" font-family="Verdana, sans-serif" font-size="21" fill="#9da7b1">See what a price really is — history, drops and an honest deal score.</text>
+</svg>
